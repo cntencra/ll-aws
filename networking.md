@@ -108,4 +108,25 @@ this can be found in systems manager and allows you to set up a connection to yo
 
 use an AWS client vpn to establish a secure connection to your VPC
 
+## Elastic Load Balancer
 
+Scales up and down avalable servers / ec2 instances
+
+point your user at your load balancer
+
+the load balancer directs traffic to different servers epending on what is avalable
+
+allows for scaling up and down the service and allows you to take servers offline and update them etc
+
+
+- Application Load Balancers (great fr web traffic, routes traffic based on rules)
+- Network Load Balancers (High performance, lack features)
+- Gateway Load balancers (Switching traffic coming into virtual network appliances)
+
+When setting up a load balancer you need to give it a new security group that has an inbound port of HTTP and all ipv4 traffic and an outbound HTTP rule that is set to your ec2 instances security group
+
+course for load balancing ecs and multi region load balancing
+
+## Using your own domain
+
+AWS route 53 DNS service
